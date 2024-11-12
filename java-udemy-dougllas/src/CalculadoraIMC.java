@@ -21,7 +21,7 @@ public class CalculadoraIMC {
 
         //Saída de dados
         System.out.printf("O IMC para o peso %.2fkg e a altura %.2f é de " +
-                "%.2fcm",peso,altura,imc);
+                "%.2fcm",peso, altura, imc);
 
 
         sc.close();
