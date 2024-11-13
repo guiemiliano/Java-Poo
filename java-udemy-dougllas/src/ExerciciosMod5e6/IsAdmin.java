@@ -14,19 +14,29 @@ public class IsAdmin {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
-        System.out.println("Insira seu nome de usuário: ");
-        String nomeDeUsuario = sc.nextLine();
+        String repetir;
 
-        System.out.println("Insira sua Senha: ");
-        String senha = sc.nextLine();
+        do {
+            System.out.println("Insira seu nome de usuário: ");
+            String nomeDeUsuario = sc.nextLine();
 
-        if(Objects.equals(nomeDeUsuario, "admin") && Objects.equals(senha, "1234")){
-            System.out.println("Sucesso, você efetuou seu login!");
-        }else{
-            System.out.println("Ops, você errou seu nome de usuário e/ou senha");
-        }
+            System.out.println("Insira sua Senha: ");
+            String senha = sc.nextLine();
 
+            // Verifica se o nome de usuário e a senha estão corretos
+            if (Objects.equals(nomeDeUsuario, "admin") && Objects.equals(senha, "1234")) {
+                System.out.println("Sucesso, você efetuou seu login!");
+                break; // usando a palavra break eu saio do loop se conseguir logar
+            } else {
+                System.out.println("Ops, você errou seu nome de usuário e/ou senha.");
+                System.out.print("Deseja tentar novamente? (s/n): ");
+                repetir = sc.nextLine();
+            }
+
+        } while (repetir.equalsIgnoreCase("s")); // Continua enquanto o usuário quiser tentar novamente
 
         sc.close();
+        System.out.println("Programa encerrado.");
     }
 }
+
