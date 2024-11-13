@@ -7,5 +7,26 @@ package ExerciciosMod5e6;
     de erro
  */
 
+import java.util.Objects;
+import java.util.Scanner;
+
 public class IsAdmin {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.println("Insira seu nome de usuário: ");
+        String nomeDeUsuario = sc.nextLine();
+
+        System.out.println("Insira sua Senha: ");
+        String senha = sc.nextLine();
+
+        if(Objects.equals(nomeDeUsuario, "admin") && Objects.equals(senha, "1234")){
+            System.out.println("Sucesso, você efetuou seu login!");
+        }else{
+            System.out.println("Ops, você errou seu nome de usuário e/ou senha");
+        }
+
+
+        sc.close();
+    }
 }
