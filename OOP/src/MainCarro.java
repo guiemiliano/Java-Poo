@@ -6,7 +6,7 @@ public class MainCarro {
         palio.modelo  = "Palio Celebration";
         palio.cavalos = 72;
         palio.transmissao = "Manual";
-        palio.cor = "Cinza";
+        palio.cor = "Prata";
         palio.fabricante = "Fiat";
         palio.capacidadeTanque = 50;
         palio.combustivel = 0;
