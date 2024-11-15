@@ -1,3 +1,5 @@
+package carros;
+
 public class Carro {
     //propriedades ou atributos
     String modelo;
