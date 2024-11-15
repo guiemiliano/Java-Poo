@@ -1,14 +1,17 @@
 public class Carro {
+    //propriedades ou atributos
     String modelo;
     int cavalos;
     String transmissao;
     String cor;
     String fabricante;
+    int capacidadeTanque;
+    int combustivel;
 
-
+    //no args constructor
     public Carro() {
     }
-
+    //all args constructor
     public Carro(String modelo, int cavalos, String transmissao, String cor, String fabricante, int ano) {
         this.modelo = modelo;
         this.cavalos = cavalos;
@@ -17,26 +20,11 @@ public class Carro {
         this.fabricante = fabricante;
     }
 
-    public Carro(String modelo, int cavalos, String cor, String transmissao) {
-        this.modelo = modelo;
-        this.cavalos = cavalos;
-        this.cor = cor;
-        this.transmissao = transmissao;
+
+    //Nome de método com letra minúscula
+    public int abastecer(int litros){
+        return combustivel += litros;
     }
 
-    public void ligar(){
-        System.out.println("Você ligou o carro " + modelo);
-    }
-
-    public void darRe(){
-        System.out.println("Você deu ré no carro " + modelo);
-    }
-
-    public void acionarFreioDeMao(){
-        System.out.println("Você acionou o freio de mão do seu carro " + modelo);
-    }
-    public void ligarFarol(){
-        System.out.println("Você ligou o farol do carro" + modelo);
-    }
 
 }
