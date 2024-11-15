@@ -7,6 +7,7 @@ public class Carro {
     String fabricante;
     int capacidadeTanque;
     int combustivel;
+    int kmPorLitros;
 
     //no args constructor
     public Carro() {
@@ -23,7 +24,19 @@ public class Carro {
 
     //Nome de método com letra minúscula
     public int abastecer(int litros){
-        return combustivel += litros;
+        int sobra = litros - capacidadeTanque;
+        if(litros <= capacidadeTanque) {
+            return combustivel += litros;
+        }else{
+            System.out.println(modelo +" foi abastecido somente até " + capacidadeTanque +
+                    " litros pois é sua capacidade máxima de tanque, sobraram " + sobra + " litros." );
+            return combustivel = capacidadeTanque;
+        }
+    }
+
+    public int autonomiaCombustivel(){
+        int autonomia = kmPorLitros * combustivel;
+        return autonomia;
     }
 
 
