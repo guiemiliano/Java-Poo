@@ -33,6 +33,11 @@ public class Main {
         System.out.println("Conta depois do depósito");
         contaFulano.imprimirSaldo();
 
+        //Sacando o valor de 70 reais
+        System.out.println("Sacando o valor de 70 reais");
+        sistemBancario.sacar(contaFulano, 30);
+        contaFulano.imprimirSaldo();
+
 
 
     }
