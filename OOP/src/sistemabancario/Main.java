@@ -22,11 +22,15 @@ public class Main {
 
         Banco sistemBancario = new Banco();
 
+        //Valor de 50 atribuído acima
         System.out.println("Conta antes do deposito");
         contaFulano.imprimirSaldo();
 
-        System.out.println("Conta depois do depósito");
+        //Depositando na contaFulano
         sistemBancario.depositar(contaFulano, 200.00);
+
+        //Valor que á tinha na conta + Deposito
+        System.out.println("Conta depois do depósito");
         contaFulano.imprimirSaldo();
 
 
