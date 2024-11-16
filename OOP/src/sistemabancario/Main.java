@@ -20,10 +20,10 @@ public class Main {
         raul.cpf = "223211230";
         */
 
-        Conta contaPedro = new Conta();
-        contaPedro.titular = pedro;
-        contaPedro.numero = 1000;
-        contaPedro.saldo = 50;
+        Conta contaPedro = new Conta(pedro, 1000, 50);
+//        contaPedro.titular = pedro;
+//        contaPedro.numero = 1000;
+//        contaPedro.saldo = 50;
 
         Conta contaRaul = new Conta();
         contaRaul.titular = raul;

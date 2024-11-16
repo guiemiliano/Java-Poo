@@ -6,6 +6,17 @@ public class Conta {
     int numero;
     double saldo;
 
+    public Conta(Cliente titular, int numero, double saldo) {
+        this.titular = titular;
+        this.numero = numero;
+        if(saldo >= 0){
+            this.saldo = saldo;
+        }
+    }
+
+    public Conta() {
+
+    }
     //this referencia ao objeto atual
 
     public void imprimirSaldo(){
