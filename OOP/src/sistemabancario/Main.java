@@ -19,7 +19,6 @@ public class Main {
         raul.nome = "Raul";
         raul.cpf = "223211230";
 
-
         Conta contaPedro = new Conta();
         contaPedro.titular = pedro;
         contaPedro.numero = 1000;
@@ -27,7 +26,7 @@ public class Main {
 
         Conta contaRaul = new Conta();
         contaRaul.titular = raul;
-        contaPedro.numero = 2000;
+        contaRaul.numero = 2000;
         contaRaul.saldo = 0;
 
         Banco sistemBancario = new Banco();
