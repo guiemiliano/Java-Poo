@@ -1,7 +1,10 @@
 package sistemabancario;
 
+import java.util.Locale;
+
 public class Main {
     public static void main(String[] args) {
+        Locale.setDefault(Locale.US);
         //Apontando para um espaço de memória heap
         //ambas fazem referência para o mesmo Objeto
         Cliente fulano = new Cliente();
@@ -23,7 +26,7 @@ public class Main {
         contaFulano.imprimirSaldo();
 
         System.out.println("Conta depois do depósito");
-        sistemBancario.depositar(contaFulano, 200);
+        sistemBancario.depositar(contaFulano, 200.00);
         contaFulano.imprimirSaldo();
 
 

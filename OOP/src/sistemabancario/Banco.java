@@ -2,7 +2,6 @@ package sistemabancario;
 
 public class Banco {
 
-
     void depositar(Conta conta, double valor){
         double saldoAtual = conta.saldo;
         conta.saldo = saldoAtual + valor;
