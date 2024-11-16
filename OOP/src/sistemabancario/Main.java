@@ -7,36 +7,53 @@ public class Main {
         Locale.setDefault(Locale.US);
         //Apontando para um espaço de memória heap
         //ambas fazem referência para o mesmo Objeto
-        Cliente fulano = new Cliente();
+        Cliente pedro = new Cliente();
+        Cliente raul = new Cliente();
 
-        //Cliente outroPonteiro = fulano;
+        //Cliente outroPonteiro = pedro;
         //outroPonteiro.nome = "x";
 
-        fulano.nome = "Fulano";
-        fulano.cpf = "122131230";
+        pedro.nome = "Pedro";
+        pedro.cpf = "122131230";
 
-        Conta contaFulano = new Conta();
-        contaFulano.titular = fulano;
-        contaFulano.numero = 1000;
-        contaFulano.saldo = 50;
+        raul.nome = "Raul";
+        raul.cpf = "223211230";
+
+
+        Conta contaPedro = new Conta();
+        contaPedro.titular = pedro;
+        contaPedro.numero = 1000;
+        contaPedro.saldo = 50;
+
+        Conta contaRaul = new Conta();
+        contaRaul.titular = raul;
+        contaPedro.numero = 2000;
+        contaRaul.saldo = 0;
 
         Banco sistemBancario = new Banco();
 
         //Valor de 50 atribuído acima
-        System.out.println("Conta antes do deposito");
-        contaFulano.imprimirSaldo();
+        System.out.println("Antes do deposito");
+        contaPedro.imprimirSaldo();
 
-        //Depositando na contaFulano
-        sistemBancario.depositar(contaFulano, 200.00);
+        //Depositando na contaPedro
+        sistemBancario.depositar(contaPedro, 200.00);
 
         //Valor que á tinha na conta + Deposito
-        System.out.println("Conta depois do depósito");
-        contaFulano.imprimirSaldo();
+        System.out.println("Depois do depósito");
+        contaPedro.imprimirSaldo();
 
         //Sacando o valor de 70 reais
         System.out.println("Sacando o valor de 70 reais");
-        sistemBancario.sacar(contaFulano, 30);
-        contaFulano.imprimirSaldo();
+        sistemBancario.sacar(contaPedro, 30);
+        contaPedro.imprimirSaldo();
+
+        sistemBancario.transferir(contaPedro, contaRaul, 150);
+        System.out.println("Transferindo 150 reais da conta de " + pedro.nome +
+                " para " + raul.nome);
+
+        contaRaul.imprimirSaldo();
+
 
 
 
