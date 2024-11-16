@@ -11,7 +11,7 @@ public class Banco {
         double saldoAtual = conta.saldo;
         double novoSaldo = saldoAtual - valor;
 
-        if(novoSaldo < 0){
+        if(novoSaldo < 0 || novoSaldo > saldoAtual){
             System.out.println("Não foi possível sacar, saldo insuficiente");
         }else{
             conta.saldo = novoSaldo;

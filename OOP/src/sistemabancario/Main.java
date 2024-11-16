@@ -44,7 +44,7 @@ public class Main {
 
         //Sacando o valor de 70 reais
         System.out.println("Sacando o valor de 70 reais");
-        sistemBancario.sacar(contaPedro, 30);
+        sistemBancario.sacar(contaPedro, 70);
         contaPedro.imprimirSaldo();
 
         sistemBancario.transferir(contaPedro, contaRaul, 150);
@@ -52,6 +52,7 @@ public class Main {
                 " para " + raul.nome);
 
         contaRaul.imprimirSaldo();
+        contaPedro.imprimirSaldo();
 
 
 
