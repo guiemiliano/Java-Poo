@@ -7,17 +7,18 @@ public class Main {
         Locale.setDefault(Locale.US);
         //Apontando para um espaço de memória heap
         //ambas fazem referência para o mesmo Objeto
-        Cliente pedro = new Cliente();
-        Cliente raul = new Cliente();
+        Cliente pedro = new Cliente("Pedro","122131230");
+        Cliente raul = new Cliente("Raul", "223211230");
 
         //Cliente outroPonteiro = pedro;
         //outroPonteiro.nome = "x";
-
+        /*
         pedro.nome = "Pedro";
         pedro.cpf = "122131230";
 
         raul.nome = "Raul";
         raul.cpf = "223211230";
+        */
 
         Conta contaPedro = new Conta();
         contaPedro.titular = pedro;
