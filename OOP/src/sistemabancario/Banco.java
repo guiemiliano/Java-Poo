@@ -5,7 +5,7 @@ public class Banco {
 
     void depositar(Conta conta, double valor){
         double saldoAtual = conta.saldo;
-        double novoSaldo = saldoAtual + valor;
+        conta.saldo = saldoAtual + valor;
     }
 
     void sacar(Conta conta, double valor){
@@ -26,8 +26,7 @@ public class Banco {
             System.out.println("Não foi possível transferir, saldo insuficiente");
         }else{
             origem.saldo = novoSaldoOrigem;
-            double novoSaldoDestino = destino.saldo + valor;
-            destino.saldo = novoSaldoDestino;
+            destino.saldo = destino.saldo + valor;
         }
     }
 }

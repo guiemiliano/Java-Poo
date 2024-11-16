@@ -1,14 +1,15 @@
 package sistemabancario;
 
 public class Conta {
-    Cliente titual;
+
+    Cliente titular;
     int numero;
     double saldo;
 
     //this referencia ao objeto atual
 
     public void imprimirSaldo(){
-        System.out.println(this.saldo);
+        System.out.printf("%.2f%n", this.saldo);
     }
 
 
