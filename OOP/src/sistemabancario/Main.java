@@ -24,11 +24,12 @@ public class Main {
 //        contaPedro.titular = pedro;
 //        contaPedro.numero = 1000;
 //        contaPedro.saldo = 50;
+        System.out.println("Saldo da conta pedro: " + contaPedro.getSaldo());
 
         Conta contaRaul = new Conta();
         contaRaul.titular = raul;
         contaRaul.numero = 2000;
-        contaRaul.saldo = 0;
+
 
         Banco sistemBancario = new Banco();
 

@@ -1,0 +1,18 @@
+//modificadores de acesso
+    Palavras chave que definem um nível de visibilidade
+    ou acessibilidade das nossas classes, métodos ou atributos
+    em relação a outras partes do nosso programa
+
+    public
+    visível em qualquer parte do nosso programa
+
+    private
+    Visível e utilizável somente na mesma classe
+
+    protected
+
+
+    default (ou package)
+    esse é o padrão quando não se coloca nenhum acima, ele
+    garante que você possa usar o mesmo em qualquer arquivo dentro
+    da mesma pasta(pacote/package)
