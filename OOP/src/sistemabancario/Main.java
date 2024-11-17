@@ -7,8 +7,11 @@ public class Main {
         Locale.setDefault(Locale.US);
         //Apontando para um espaço de memória heap
         //ambas fazem referência para o mesmo Objeto
-        Cliente pedro = new Cliente("Pedro","122131230");
+        Cliente pedro = new Cliente();
         Cliente raul = new Cliente("Raul", "223211230");
+
+        pedro.setNome("Pedro");
+        pedro.setCpf("3222130");
 
         //Cliente outroPonteiro = pedro;
         //outroPonteiro.nome = "x";
@@ -50,8 +53,8 @@ public class Main {
         contaPedro.imprimirSaldo();
 
         sistemBancario.transferir(contaPedro, contaRaul, 150);
-        System.out.println("Transferindo 150 reais da conta de " + pedro.nome +
-                " para " + raul.nome);
+        System.out.println("Transferindo 150 reais da conta de " + pedro.getNome() +
+                " para " + raul.getNome());
 
         contaRaul.imprimirSaldo();
         contaPedro.imprimirSaldo();

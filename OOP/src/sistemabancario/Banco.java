@@ -1,11 +1,12 @@
 package sistemabancario;
+//CLASSE LÓGICA
 
 public class Banco {
 
     void depositar(Conta conta, double valor){
         double saldoAtual = conta.getSaldo();
         double novoSaldo = saldoAtual + valor;
-        conta.modificarSaldo(novoSaldo);
+        conta.setSaldo(novoSaldo);
     }
 
     void sacar(Conta conta, double valor){
@@ -15,7 +16,7 @@ public class Banco {
         if(novoSaldo < 0 || novoSaldo > saldoAtual){
             System.out.println("Não foi possível sacar, saldo insuficiente");
         }else{
-            conta.modificarSaldo(novoSaldo);
+            conta.setSaldo(novoSaldo);
         }
     }
 
@@ -25,9 +26,9 @@ public class Banco {
         if(novoSaldoOrigem < 0){
             System.out.println("Não foi possível transferir, saldo insuficiente");
         }else{
-            origem.modificarSaldo(novoSaldoOrigem);
+            origem.setSaldo(novoSaldoOrigem);
             double novoSaldoDestino = destino.getSaldo() + valor;
-            destino.modificarSaldo(novoSaldoDestino);
+            destino.setSaldo(novoSaldoDestino);
         }
     }
 
