@@ -9,6 +9,7 @@ public class Main {
         //ambas fazem referência para o mesmo Objeto
         Cliente pedro = new Cliente();
         Cliente raul = new Cliente("Raul", "223211230");
+        Cliente joao = new Cliente("João", "121212123");
 
         pedro.setNome("Pedro");
         pedro.setCpf("3222130");
@@ -32,6 +33,8 @@ public class Main {
         Conta contaRaul = new Conta();
         contaRaul.setTitular(raul);
         contaRaul.setNumero(2000);
+
+        Conta contaJoao = new Conta(joao, 3000, 0);
 
 
         Banco sistemBancario = new Banco();

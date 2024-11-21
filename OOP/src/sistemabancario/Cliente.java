@@ -4,6 +4,11 @@ package sistemabancario;
    Construtores são métodos especiais usados para inicializar
    objetos de uma classe, por padrão recebo um construtor sem parâmetros
    ele tem o mesmo nome da classe
+
+   Eu criei a variável de classe quantidadeClientes, para podermos
+   controlar e descobrir qual a quantidade de clientes eu tenho no meu
+   sistema, conforme um cliente é instanciado nos construtores, eu faço
+   a incrementação de um cliente.
  */
 public class Cliente {
 
