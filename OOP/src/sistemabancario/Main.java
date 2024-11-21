@@ -30,8 +30,8 @@ public class Main {
         System.out.println("Saldo da conta pedro: " + contaPedro.getSaldo());
 
         Conta contaRaul = new Conta();
-        contaRaul.titular = raul;
-        contaRaul.numero = 2000;
+        contaRaul.setTitular(raul);
+        contaRaul.setNumero(2000);
 
 
         Banco sistemBancario = new Banco();
@@ -59,7 +59,7 @@ public class Main {
         contaRaul.imprimirSaldo();
         contaPedro.imprimirSaldo();
 
-
+        System.out.println("Quantidade Clientes: " + Cliente.quantidadeClientes);
 
 
     }

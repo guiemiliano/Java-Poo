@@ -6,6 +6,11 @@ package sistemabancario;
    ele tem o mesmo nome da classe
  */
 public class Cliente {
+
+    //variável de classe
+    public static int quantidadeClientes;
+
+    //variável de instância
     private String nome;
     private String cpf;
 
@@ -13,7 +18,14 @@ public class Cliente {
     public Cliente(String nome, String cpf) {
         this.nome = nome;
         this.cpf = cpf;
+        incrementarClientes();
     }
+
+    //noArgs
+    public Cliente() {
+        incrementarClientes();
+    }
+
 
     public String getNome() {
         return nome;
@@ -31,9 +43,9 @@ public class Cliente {
         this.cpf = cpf;
     }
 
-    //noArgs
-    public Cliente() {
 
+    public static void incrementarClientes(){
+        Cliente.quantidadeClientes++;
     }
 
 }
