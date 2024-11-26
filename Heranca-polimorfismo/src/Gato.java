@@ -1,11 +1,12 @@
 public class Gato extends Animal{
 
     public void miar(){
-        System.out.println(nome + " está miando");
+        System.out.println(getNome() + " está miando");
     }
 
     public void subirEmTelhado(){
-        System.out.println(nome + " está subindo no telhado");
+        System.out.println(getNome() + " está subindo no telhado");
     }
 
 }
+
