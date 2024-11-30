@@ -13,7 +13,6 @@ public class Main {
         mel.setNome("Mel");
         mel.setIdade(10);
 
-
         mel.latir();
         mel.correrAtrasDeMoto();
 ;
