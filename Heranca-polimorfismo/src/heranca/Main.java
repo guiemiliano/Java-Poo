@@ -5,13 +5,15 @@ public class Main {
 
         Gato gato = new Gato(6, 10);
         gato.mostrarInformacoes();
-        gato.miar();
+        gato.acaoAnimal();
+        gato.subirEmTelhado();
 
         System.out.println("----------------------------");
 
         Cachorro cachorro = new Cachorro(7, 20);
         cachorro.mostrarInformacoes();
-        cachorro.latir();
+        cachorro.acaoAnimal();
+        cachorro.correrAtrasDeMoto();
 
     }
 }

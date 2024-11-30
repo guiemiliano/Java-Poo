@@ -10,7 +10,9 @@ public class Cachorro extends Animal{
         this.forcaMordida = forcaMordida;
     }
 
-    public void latir(){
+    //Polimorfismo na prática, sobrescrevi o método da superclasse
+    @Override
+    public void acaoAnimal() {
         System.out.println(getNome() + " está latindo");
     }
 

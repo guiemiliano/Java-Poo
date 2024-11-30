@@ -1,6 +1,6 @@
 package heranca;
 
-public class Animal {
+public abstract class Animal {
     //isso é uma superclasse, pois ela tem classes filhas
 
     /*
@@ -51,6 +51,9 @@ public class Animal {
         System.out.println("Nome: " + nome);
         System.out.println("Idade: " + idade);
     }
+
+    public abstract void acaoAnimal();
+
 
 }
 

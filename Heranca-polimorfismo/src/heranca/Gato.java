@@ -9,12 +9,12 @@ public class Gato extends Animal{
         this.forcaArranhar = forcaArranhar;
     }
 
-    public void miar(){
+    @Override
+    public void acaoAnimal() {
         System.out.println(getNome() + " está miando");
     }
 
     public void subirEmTelhado(){
-
         System.out.println(getNome() + " está subindo no telhado");
     }
 
