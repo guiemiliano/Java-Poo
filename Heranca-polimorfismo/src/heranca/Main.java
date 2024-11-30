@@ -1,23 +1,17 @@
+package heranca;
+
 public class Main {
     public static void main(String[] args) {
 
-        Gato salem = new Gato();
-        Cachorro mel = new Cachorro();
+        Gato gato = new Gato(6, 10);
+        gato.mostrarInformacoes();
+        gato.miar();
 
-        salem.setNome("Salem");
-        salem.setIdade(150);
+        System.out.println("----------------------------");
 
-        salem.miar();
-        salem.subirEmTelhado();
-
-        mel.setNome("Mel");
-        mel.setIdade(10);
-
-        mel.latir();
-        mel.correrAtrasDeMoto();
-;
-
-
+        Cachorro cachorro = new Cachorro(7, 20);
+        cachorro.mostrarInformacoes();
+        cachorro.latir();
 
     }
 }

@@ -1,3 +1,5 @@
+package heranca;
+
 public class Animal {
     //isso é uma superclasse, pois ela tem classes filhas
 
@@ -9,6 +11,11 @@ public class Animal {
      */
     private String nome;
     private int idade;
+
+    public Animal(String nome, int idade) {
+        this.nome = nome;
+        this.idade = idade;
+    }
 
 
     public String getNome() {
@@ -38,6 +45,11 @@ public class Animal {
 
     public void dormir(){
         System.out.println("Dormindo...");
+    }
+
+    public void mostrarInformacoes(){
+        System.out.println("Nome: " + nome);
+        System.out.println("Idade: " + idade);
     }
 
 }

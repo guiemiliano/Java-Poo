@@ -2,9 +2,11 @@ package heranca;
 
 public class Gato extends Animal{
 
+    int forcaArranhar;
 
-    public Gato(String nome, int idade) {
+    public Gato(int idade, int forcaArranhar) {
         super("Gato", idade);
+        this.forcaArranhar = forcaArranhar;
     }
 
     public void miar(){
@@ -15,6 +17,8 @@ public class Gato extends Animal{
 
         System.out.println(getNome() + " está subindo no telhado");
     }
+
+
 
 }
 
