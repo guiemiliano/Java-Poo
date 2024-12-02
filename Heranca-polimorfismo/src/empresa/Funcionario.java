@@ -1,6 +1,11 @@
 package empresa;
 
-public class Funcionario {
+/*
+    Não faz sentido criar um objeto funcionário, cada funcionário
+    tem um cargo, é correto criar uma classe abstrata e extender ela nas
+    classes de cargos
+ */
+public abstract class Funcionario {
     private String nome;
     private String cpf;
     private double salario;
@@ -9,12 +14,11 @@ public class Funcionario {
         O bônus é de 10% do salário e 50 reais de adição
      */
 
-    public double calcularBonificacao(){
-        return (salario / 10) + 50;
-    }
+    public abstract double calcularBonificacaoAnual();
+
 
     public void imprimirRemuneracao(){
-        double remuneracao = salario + this.calcularBonificacao();
+        double remuneracao = salario + this.calcularBonificacaoAnual();
         System.out.println("Remuneração do Funcionário " + nome +
                 ": " + remuneracao);
     }
