@@ -15,10 +15,15 @@ public abstract class Funcionario {
      */
 
     public abstract double calcularBonificacaoAnual();
+    public abstract void bonificacaoAnual();
 
+
+    public double calcularRenda(){
+        return (salario / 10); //10%
+    }
 
     public void imprimirRemuneracao(){
-        double remuneracao = salario + this.calcularBonificacaoAnual();
+        double remuneracao = salario + this.calcularRenda();
         System.out.println("Remuneração do Funcionário " + nome +
                 ": " + remuneracao);
     }

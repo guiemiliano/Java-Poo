@@ -9,8 +9,18 @@ public class Gerente extends Funcionario {
      */
 
     @Override
-    public double calcularBonificacaoAnual() {
-        return (getSalario() / 10) + 500;
-
+    public double calcularRenda() {
+        return super.calcularRenda() + 500;
     }
+
+    @Override
+    public double calcularBonificacaoAnual() {
+        return super.getSalario() * 3;
+    }
+
+    @Override
+    public void bonificacaoAnual(){
+        System.out.println(getNome() + " resultado PR: " +calcularBonificacaoAnual());
+    }
+
 }

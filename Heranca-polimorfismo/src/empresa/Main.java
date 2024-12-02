@@ -8,6 +8,7 @@ public class Main {
         tecnico.setCpf("1231221212");
 
         tecnico.imprimirRemuneracao();
+        tecnico.bonificacaoAnual();
 
         Gerente gerente = new Gerente();
         gerente.setNome("Fabio");
@@ -15,6 +16,8 @@ public class Main {
         gerente.setCpf("121212135");
 
         gerente.imprimirRemuneracao();
+        gerente.bonificacaoAnual();
+
 
     }
 }
