@@ -12,7 +12,7 @@ public class Main {
 
         Gerente gerente = new Gerente();
         gerente.setNome("Fabio");
-        gerente.setSalario(6000);
+        gerente.setSalario(3000);
         gerente.setCpf("121212135");
 
         gerente.imprimirRemuneracao();

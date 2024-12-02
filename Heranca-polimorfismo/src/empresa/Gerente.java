@@ -20,7 +20,7 @@ public class Gerente extends Funcionario {
 
     @Override
     public void bonificacaoAnual(){
-        System.out.println(getNome() + " resultado PR: " +calcularBonificacaoAnual());
+        System.out.printf("%s resultado PR: R$ %.2f%n", getNome(), calcularBonificacaoAnual());
     }
 
 }
